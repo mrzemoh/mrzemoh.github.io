@@ -3,99 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Website is Coming Soon! | [Your Company/Project Name]</title>
-    <meta name="description" content="We're working on something awesome! Our new website will be launching soon. Stay tuned!">
-    <meta name="keywords" content="soon, launch, website, new, project, coming soon, under construction">
-
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.yourwebsite.com/"> <meta property="og:title" content="Our Website is Coming Soon! | [Your Company/Project Name]">
-    <meta property="og:description" content="We're working on something awesome! Our new website will be launching soon. Stay tuned!">
-    <meta property="og:image" content="https://www.yourwebsite.com/preview.jpg"> <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.yourwebsite.com/"> <meta property="twitter:title" content="Our Website is Coming Soon! | [Your Company/Project Name]">
-    <meta property="twitter:description" content="We're working on something awesome! Our new website will be launching soon. Stay tuned!">
-    <meta property="twitter:image" content="https://www.yourwebsite.com/preview.jpg"> <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-
-        .container {
-            background-color: #ffffff;
-            padding: 40px 60px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            max-width: 700px;
-            width: 100%;
-        }
-
-        h1 {
-            color: #2c3e50;
-            font-size: 2.8em;
-            margin-bottom: 20px;
-            line-height: 1.2;
-        }
-
-        p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            margin-bottom: 30px;
-        }
-
-        .contact-info {
-            margin-top: 30px;
-            font-size: 1em;
-            color: #555;
-        }
-
-        .contact-info a {
-            color: #007bff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-
-        /* Responsive design for mobile devices */
-        @media (max-width: 768px) {
-            .container {
-                padding: 30px 40px;
-            }
-            h1 {
-                font-size: 2em;
-            }
-            p {
-                font-size: 1em;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .container {
-                padding: 20px 25px;
-            }
-            h1 {
-                font-size: 1.6em;
-            }
-        }
-    </style>
+    <title>Mr. Zemoh Plugins</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Our Website is Coming Soon!</h1>
-        <p>We are diligently working on creating something amazing for you. Stay tuned, there will be a lot of exciting things coming soon!</p>
-        <p>Follow our updates or contact us if you have any questions.</p>
-        <div class="contact-info">
-            <p>Email: <a href="mailto:info@yourwebsite.com">info@yourwebsite.com</a></p> </div>
+    <header>
+        <nav>
+    <div class="logo">
+        <a href="#" class="logo-link">
+            <img src="assets/images/mr-zemoh-logo.svg" alt="Mr. Zemoh Logo" class="logo-img">
+        </a>
+        <span class="tagline">Figma Plugins. Crafted for You.</span>
     </div>
+    <button class="hamburger" aria-label="Open navigation menu" aria-controls="mobileNavPopover" aria-expanded="false">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+        <span class="visually-hidden">Open menu</span>
+    </button>
+    <ul id="mainNav">
+        <li><a href="#arcotype-summary">ArcoType</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#feedback">Feedback & Contacts</a></li>
+    </ul>
+
+</nav>
+    </header>
+    <div class="mobile-nav-popover" id="mobileNavPopover" hidden>
+        <ul>
+            <li><a href="#arcotype-summary">ArcoType</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#feedback">Feedback & Contacts</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section id="hero">
+            <div id="greeting">
+                <h1>Figma Plugins by Mr. Zemoh</h1>
+                <h4>Enhance your workflow with innovative plugins.</h4>
+            </div>
+        </section>
+
+        <section id="about-plugins">
+            <div>
+                <h3>Boost Efficiency & Save Time</h3>
+                <p>Automation: Plugins handle repetitive and monotonous work, such as renaming layers in bulk, organizing elements, or generating placeholder content. This frees up designers to focus on more critical and creative aspects of their projects.</p>
+                <p>Speed: Tasks that might take minutes or hours to do manually can often be completed in seconds with the right plugin.</p>
+            </div>
+            <div>
+                <h3>Enhance Creativity & Expand Possibilities</h3>
+                <p>New Functionality: They introduce specialized features not natively available in Figma, like advanced grid systems, complex shape generation, or unique visual effects.</p>
+                <p>Experimentation: Plugins enable designers to easily experiment with new styles, color palettes, typography, and complex components, encouraging innovation.</p>
+            </div>
+            <div>
+                <h3>Boost Efficiency & Save Time</h3>
+                <p>Data Generation: Generate realistic user data, avatars, or content to populate designs, ensuring a more authentic look and feel.</p>
+                <p>Accessibility Checks: Plugins can help check for accessibility issues (e.g., color contrast), making designs more inclusive.</p>
+                <p>Integration: Seamlessly connect Figma with other tools and services, streamlining workflows across different platforms.</p>
+            </div>
+        </section>
+       
+        <section id="about">
+            <div>
+                <h2>About Me</h2>
+                <div>
+                    <img id="about-me-img" src="assets/images/Me.png" alt="About Me">
+                    <p>Hi, I'm Stanislav. Currently based in Portugal, I have many years of experience creating web applications, working either as a UX/UI designer or a project manager (I believe these roles are most effective when kept separate on projects). Throughout my professional journey, I occasionally develop Figma plugins to solve real-world design and workflow challenges. Now, I've decided to share these tools with the community. I hope you find them helpful and inspiring!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="arcotype-summary">
+            <h2>ArcoType – Effortless Curved Text for Figma</h2>
+            <p>ArcoType is a Figma plugin that allows you to create curved text with ease. With just a few clicks, you can transform your text into a curved shape, making it look more dynamic and engaging. Whether you're creating a poster, a banner, or a design for a website, ArcoType can help you create a unique and eye-catching design.</p>            
+        </section>
+        <section id="arcotype-features">
+            <div>
+                <div>
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>Instant Circular & Arc Text: Easily bend any text along a perfect circle or custom arc with intuitive controls.</li>    
+                        <li>Live Preview: See exactly how your curved text will look before placing it on the canvas.</li>
+                        <li>Font-Perfect Accuracy: ArcoType measures real font metrics—including bold and italic styles—for flawless alignment and spacing.</li>
+                        <li>Full Customization: Adjust radius, spacing, vertical offset, arc direction, and rotation to match any creative vision.</li>
+                        <li>Smart UI: Modern, responsive interface that fits seamlessly into your Figma workflow.</li>
+                        <li>One-Click Placement: Instantly add your curved text to the canvas, perfectly centered and grouped for easy editing.</li>
+                    </ul>
+                </div>
+                <img src="assets/images/arcotype-image.png" alt="ArcoType">
+            </div>
+        </section>
+        <section id="arcotype-features-part2">
+            <div>
+                <div>
+                    <h4>Why Designers Love ArcoType</h4>
+                    <ul>
+                        <li>Saves hours of manual adjustments and tedious path editing.</li>    
+                        <li>Works with all your fonts—system and Google Fonts included.</li>
+                        <li>No more guesswork: what you see in the preview is exactly what you get on the canvas.</li>                        
+                    </ul>
+                </div>
+                <div>
+                    <h4>Perfect for</h4>
+                    <ul>
+                        <li>Logo design</li>    
+                        <li>Badges, seals, buttons & stickers</li>
+                        <li>Creative headlines & Social media graphics</li>
+                        <li>And much more!</li>                     
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="feedback">
+            <div>
+                <div>
+                    <h3>Feedback</h3>                
+                    <form id="feedbackForm">
+                        <input type="text" name="website" autocomplete="off" tabindex="-1" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;" aria-hidden="true">
+                        <label>
+                            Name:
+                            <input type="text" name="name" required>
+                        </label>
+                        <label>
+                            Email:
+                            <input type="email" name="email" required>
+                        </label>
+                        <label>
+                            Message:
+                            <textarea name="message" required></textarea>
+                        </label>
+                        <button type="submit">Send</button>
+                        <div id="feedbackStatus"></div>
+                    </form>
+                </div>
+                <div>
+                    <h3>Contacts</h3>
+                    <p><a href="mailto:stan.andrusevich@gmail.com">stan.andrusevich@gmail.com</a></p>
+                    <p>+(351) 915-311-149</p>    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Mr. Zemoh. All rights reserved.</p>
+    </footer>
+
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+    <script src="script.js"></script>
 </body>
 </html>
