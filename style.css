@@ -2,6 +2,8 @@ html {
     font-size: 16px;
     color: #000;
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -31,17 +33,26 @@ body {
 }
 
 header {
-    padding: 1rem 0;
     position: fixed;
-    width: 100%;
-    padding: 0;
     top: 0;
-    z-index: 1000;  
-    background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.95));
-    backdrop-filter: blur(32px);
-    -webkit-backdrop-filter: blur(32px);
-    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
-    transition: background 0.3s;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    left: 0;
+    height: 64px;
+    width: 100%;
+    padding: 0;               /* nav handles inner padding */
+
+    z-index: 1000;
+
+    box-sizing: border-box;
+    background-color: rgba(242,241,241,0.3);
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+
+ul#mainNav li {
+    padding: 0;
 }
 
 h1 {
@@ -74,16 +85,33 @@ p {
     margin: 0;
 }
 
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+}
 
 
 nav {
     display: flex;
-    justify-content: space-between;
+    inset: 0;
+    height: 200%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.3) 75%);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    mask-image: linear-gradient(
+      to bottom,
+      transparent 0 25%,
+      black 25% 75%,
+      transparent 75% 100%
+    );
+    justify-content: center;
     align-items: center;
-    max-width: 1100px;
+    width: 100%;
     margin: 0 auto;
-    padding: 0 20px;
-    height: 58px;    
+    padding: 0 20px;  
+    
 }
 
 nav .logo {
@@ -278,7 +306,7 @@ nav ul li a:hover {
 }
 
 main {
-    padding: 61px 24px 0; /* Add horizontal padding to match the rest of the content */
+    padding: 96px 24px 0; /* Add horizontal padding to match the rest of the content */
     max-width: 1200px;
     margin: 0 auto;
     box-sizing: border-box;
