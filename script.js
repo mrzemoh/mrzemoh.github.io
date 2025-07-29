@@ -1,11 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Smooth scrolling for ALL navigation links (header, popover, etc.)
     const scrollLinks = document.querySelectorAll('a[href^="#"]');
+    const headerEl = document.querySelector('header');
     const scrollToTopButton = document.getElementById('scrollToTop');
     const heroSection = document.getElementById('hero');
 
     // Function to check scroll position and toggle button visibility
     function toggleScrollToTopButton() {
+        // Update header shadow opacity
+        if (headerEl) {
+            const maxY = 120;
+            const opacity = Math.min(window.scrollY / maxY, 1) * 0.12;
+            headerEl.style.boxShadow = `0 2px 8px rgba(0,0,0,${opacity.toFixed(3)})`;
+        }
         if (!heroSection) return;
         
         const heroRect = heroSection.getBoundingClientRect();
